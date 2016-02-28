@@ -1,11 +1,9 @@
 # "Tom's Racing Simulator" by Tvon256
-# My goal was to make it so that even
-# if you get horrible car stats,
-# you still have a chance to win
-
 
 
 from random import randint
+import time
+
 distance = randint(1,3)
 
 class Car(object):
@@ -19,6 +17,7 @@ class Car(object):
 		
 	
 def main_game ():
+	print ("#############################################################")
 	print("Welcome To Tom's Racing Simulator")
 	print("You will each be given a car with a random set of attributes")
 	print("Whichever of these cars wins 2 out of 3 races wins the game!")
@@ -35,6 +34,7 @@ def main_game ():
 	while counter <= 3:
 		print ("Race %s over a distance of %s. Winner: %s" % (str(distance), str(counter), race_logic(p1_car, p2_car)))
 		counter = counter + 1
+		time.sleep(2)
 		
 	if (p1_car.races_won > p2_car.races_won):
 		print("%s Has Won!" % (str(p1_car.name)))
@@ -85,5 +85,5 @@ def race_logic(car1, car2):
 	else:
 		winner = "tie"
 	return winner
-while (true):			
+while (1 == 1):			
 	main_game()
