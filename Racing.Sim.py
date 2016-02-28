@@ -1,3 +1,10 @@
+# "Tom's Racing Simulator" by Tvon256
+# My goal was to make it so that even
+# if you get horrible car stats,
+# you still have a chance to win
+
+
+
 from random import randint
 distance = randint(1,3)
 
