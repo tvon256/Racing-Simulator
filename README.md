@@ -1,2 +1,3 @@
 # Racing-Simulator
-My First Real-ish Project
+A text based racing simulator
+
